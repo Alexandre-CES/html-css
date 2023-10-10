@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <link rel="stylesheet" href="grouping-tags.css">
+    <style>
+        body{
+            font: normal 1em Verdana, Arial, Sans-Serif;
+            background-color: rgb(122, 113, 113);
+            margin: 0px;
+        }
+        header{
+            background-color: rgba(175, 175, 175, 0.877);
+            color: white;
+            padding: 10px;
+            margin: 15px;
+            box-shadow: 5px 4px 9px 0px #636363b8;
+        }
+        h1{
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.445);
+            margin: 0px auto 10px;
+            width: 160px;
+            background-color: #636363b8;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        article > h1 {
+            display: inline;
+        }
+
+        p{
+            display:inline;
+        }
+        nav{
+            background-color: rgb(75, 85, 88);
+            width: 300px;
+            text-align: center;
+            margin: auto;
+            box-shadow: 2px 2px 3px gray;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            margin-right: 10px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 20px;
+        }
+        footer{
+            width: auto;
+            height: 20px;
+            background-color: black;
+            color: white;
+            margin: 30px 0px;
+            text-align: center;
+            padding: 0px;
+            border: 2px solid  white;
+            
+        }
+
+        footer > p{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        article > aside {
+            background-color: gray;
+            margin: 0px;
+        }
+        h2{
+            margin: 0px;
+        }
+        div#bola{
+            border-radius: 50%;
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html"><img src="../imagens/voltar.png" alt="Voltar" class="voltar"></a>
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>muito sas</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>sas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem neque voluptatem saepe, voluptates officia <h1>[</h1> molestias excepturi, debitis minus possimus hic odio assumenda earum commodi, explicabo reiciendis odit nobis magnam voluptate.</p>
+                <aside>
+                    <p>artigo escrito por sus</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido pela vaca bisonha estúdio</p>
+    </footer>
+
+    <div id="bola">
+
+    </div>
+</body>
+</html>

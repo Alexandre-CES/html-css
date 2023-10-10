@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id e Class</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SELETORES PERSONALIZADOS
+
+        #  =    id
+        .  =    class
+        >  =    children
+        :  =    pseudo-classe
+        :: =    pseudo-elemento
+
+    -->
+
+</head>
+<body>
+    <main>
+        <h1 id="principal">id e class</h1>
+        <h1>Utilizando "id" com CSS</h2>
+        <h2>O que é?</h2>
+        <p>O "id" é a identificação de um seletor. Com ele, posso ter duas formatações diferentes em um mesmo tipo de seletor, como dois h1, por exemplo. Recomendado utilizar apenas um por documento.</p>
+        <h2>Como usar?</h2>
+        <p> Para utilizar, basta colocar um "id" após uma tag e dizer qual será seu nome. Após isso, colocar a tag no arquivo CSS com um #(id em CSS) e o nome que você escolheu. Assim, aquela tag se diferenciará das outras
+            <span class="destaque">O id sempre se sobressairá sobre as classes</span>.</p>
+        <h3>Exemplo em HTML:</h3>
+        <code>
+            <p>&lt;p id="nome"&gt; &lt;/p&gt;</p>
+        </code>
+        <h3>Exemplo em CSS:</h3>
+        <code>
+            <p>p#nome{declarações}</p>
+        </code>
+
+        <h1>Utilizando Class com CSS</h1>
+        <h2>O que é?</h2>
+        <p>Basicamente o mesmo que o id, porém, pode-se utilizar vários dentro de um documento e não apenas um.</p>
+        <h2>Como usar?</h2>
+        O mesmo do id, porém, colocando "class" após uma tag e algum nome. Após isso, basta colocar no arquivo CSS um "." (class em CSS) e o nome escolhido (Sem precisar necessariamente colocar a tag antes do ponto, diferente do id). Assim, aquela tag se diferenciará das "padrão". 
+        <h3>Exemplo em HTML:</h3>
+        <code>
+            <p>&lt;p class="nome"&gt; &lt;/p&gt;</p>
+        </code>
+        <h3>Exemplo em CSS:</h3>
+        <code>
+            <p>.nome{declarações}</p>
+        </code>
+
+        <h1>Link Para página de exemplo</h1>
+        <p><a href="paginas/id-class.html" hreflang="pt-br" target="_self" rel="next" class="link">link</a></p>
+
+        <h1 class="titulo">Pseudo-classes em CSS</h1>
+        <h2>O que é?</h2>
+        <p>É uma palavra-chave adicionada após um sinal de dois pontos em um seletor e especificam o estado de algum elemento (hover, visited, active, empty, etc...).</p>
+        <h2>Como usar?</h2>
+        <p>Para utilizar, basta especificar o elemento e adicionar dois pontos(:). Logo após, adicionar o estado que será alterado.</p>
+        <h3>Exemplo:</h3>
+        <p><a href="paginas/pseudo-classes.html" hreflang="pt-br" target="_self" rel="next" class="link">link</a></p>
+
+        <h1>Pseudo-elementos em CSS</h1>
+        <h2>O que é?</h2>
+        <p>Uma palavra-chave adicionada após dois sinais de dois pontos em um seletor e permitem formatar um pedaço específico de um elemento (before, after, first-letter. first-line, etc...)</p>
+        <h2>Como usar?</h2>
+        <p>Para usar, basta especificar o elemento e colocar dois sinais de dois pontos(::). Após isso, adicionar o lugar específico que será alterado.</p>
+        <h3>Exemplo:</h3>
+        <p><a href="paginas/pseudo-elementos.html" hreflang="pt-br" target="_self" rel="next" class="link">link</a></p>
+
+        <h1>Children(>)</h1>
+        <h2>O que é?</h2>
+        <p>Indica que um elemento é "filho" de outro, podendo ser usado para especificar qual elementos gostaríamos de alterar com base em onde ele se encontra</p>
+        <h3>Exemplo</h3>
+
+        <pre><code>
+            <p> 
+            &lt;div&gt;
+                &lt;p&gt; texto exemplo &lt;/p&gt;
+            &lt;/div&gt;
+            </p>
+        </code></pre>
+        <p>O "p" está dentro de "div", ou seja, "p" é filho do div, logo <span class="destaque">div > p</span></p>
+
+    </main>
+</body>
+</html>

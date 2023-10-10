@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes em CSS</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <!--
+
+        : = pseudo-classes ()
+        > = children
+
+    -->
+
+    <style>
+        div{
+            display: inline-block;
+            background-color: green;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        div > p {               /* O ">" indica que somente os "p" que são filhos do "div" serão alterados */ 
+            display: none;
+        }
+
+        div:hover > p {         /* o hover é a ação de passar o mouse em cima de algo, como o "div", nesse exemplo */
+            display: block;
+        }
+
+        div:hover{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html"><img src="../imagens/voltar.png" alt="Voltas"></a>
+    
+    <main>
+        <h1 id="principal">Pseudo-classes</h1>
+        <p style="text-align: center;">Utilizado nas CSS com um (:) após alguma tag</p>
+        <h1>Hover</h1>
+        <p>Passe o mouse sobre o texto abaixo</p>
+        <div>Passe o mouse aqui
+            <p>Texto escondido</p>
+        </div>
+        <p>Nesse exemplo, foi utilizado um parágravo dentro de um &lt;div&gt;, que inicialmente está escondido, mas com a utilização da pseudo-classe "hover", passa a ser exibido ao passar o mouse acima com a especificação de que será o parágrafo filho do &lt;div&gt;, além de ficar mais claro. </p>
+    </main>
+
+
+</body>
+</html>

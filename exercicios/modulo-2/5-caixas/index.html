@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="principal">Modelo de caixas</h1>
+        <h1>Caixas</h1>
+        <h2>O que é uma caixa?</h2>
+        <p>A maioria dos elementos de um HTML são como uma caixa. Containers que armazenam conteúdo ou até mesmo outras caixas.</p>
+        <h2>Anatomia de uma caixa</h2>
+        <img src="imagens/anatomia.png" alt="Anatomia das caixas">
+        <p>Os elementos de uma caixa são os listados abaixo:</p>
+        <ul type="square">
+            <li><span class="lista">Content(conteúdo)</span>: onde está o "bla bla bla"</li>
+            <li><span class="lista">Width e height</span>: Largura e altura, sendo seu conjunto nomeado de "box-size"</li>
+            <li><span class="lista">Border(Borda)</span> fica ao redor do conteúdo</li>
+            <li><span class="lista">padding</span>: espaço entre o conteúdo e a borda</li>
+            <li><span class="lista">Margim(margem)</span>: espaço além da borda</li>
+            <li><span class="lista">outline</span>: espaço entre a borda e a margem</li>
+        </ul>
+        <h1>Caixas Box-level</h1>
+        <h2>O que são?</h2>
+        <p>Caixa do tipo box-level, ao serem adicionadas, pulam uma linha e ocupam uma nova até o fim.</p>
+        <h3>Exemplos</h3>
+        <ul type="square">
+            <li class="lista">&lt;div&gt;</li>
+            <li>&lt;h1&gt;</li>
+            <li>&lt;p&gt;</li>
+        </ul>
+        <p><a href="paginas/box-level.html">link</a></p>
+
+        <h1>Caixas Inline-level</h1>
+        <h2>O que é?</h2>
+        <p>Caixas do tipo inline-level, ao serem adicionadas, não pulam nenhuma linha e só ocupam o espaço necessário para mostrar o conteúdo.</p>
+        <h3>Exemplos</h3>
+        <ul type="square">
+            <li>&lt;span&gt;</li>
+            <li>&lt;a&gt;</li>
+            <li>&lt;em&gt;</li>
+        </ul>
+        <p><a href="paginas/inline-level.html">link</a></p>
+
+        <h1>Grouping tags</h1>
+        <p><a href="paginas/grouping-tags.html" target="_self" rel="next" hreflang="pt-br">link</a></p>
+    </main>
+</body>
+</html>

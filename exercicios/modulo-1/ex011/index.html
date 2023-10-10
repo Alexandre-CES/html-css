@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png"> <!--a menor fica no topo. Quanto maior, mais pra baixo.-->
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/g.png" type="image/png">
+        <img src="Imagens/gg.png" alt="Imagem flexível"> <!--Imagem padrão-->
+    </picture>
+    
+    <h1>Reproduzindo áudios</h1>
+    <audio preload="metadata" controls autostart loop> 
+        <source src="midia/vastolorde.mp3" type="audio/mpeg"> 
+        <source src="midia/vastolorde.mp3" type="audio/ogg"> 
+        <source src="midia/vastolorde.mp3" type="audio/wav"> <!--wave é meio pesado, não utilizar-->
+        <p>deu não, <a href="midia/vastolorde.mp3" download="vastolorde" type="audio/mpeg">baixa ae</a></p> 
+    </audio>
+
+    
+
+</body>
+</html>

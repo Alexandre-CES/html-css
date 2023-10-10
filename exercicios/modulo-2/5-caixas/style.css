@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(0, 183, 255);
+    
+}
+
+main{
+    font-family: Verdana, Arial, sans-serif;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 162, 255, 0.788);
+    border-radius: 15px;
+    text-align: left;
+    width: 1200px;
+    margin: auto;
+}
+
+h1{
+    font: bold 3em Verdana, Arial, Serif;
+    background-color: rgba(0, 89, 255, 0.829);
+    color: yellow;
+    text-shadow: 1px 1px 3px rgba(0, 0, 189, 0.842);
+    text-align: center;
+}
+h2{
+    font: bold 2em Verdana, Arial, Serif;
+}
+li{
+    margin: 10px;
+}
+#principal{
+    font: bold 5em Verdana, Arial, Serif;
+    background-color: rgba(0, 0, 255, 0.829);
+    color: yellow;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(1, 1, 165, 0.842);
+}
+.lista{
+    font: bolder 1em Verdana, Arial, Sans-serif;
+}
+
+
+

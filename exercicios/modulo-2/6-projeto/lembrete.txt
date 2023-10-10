@@ -1,0 +1,5 @@
+Para anotar e treinar: 
+-Personalização de lista
+-Transição
+-espaço da primeira linha do parágrafo
+ 

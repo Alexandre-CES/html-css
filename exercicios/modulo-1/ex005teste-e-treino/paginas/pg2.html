@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <p style="text-align: left;"><a href="../index.html" target="_self" rel="prev"><img src="../imagens/voltar.png" alt="Voltar"></a></p>  
+
+    <h2>Imagens</h2>
+    <h3>Imagem Normal</h3>
+    <img src="../imagens/p.png" alt="Imagem pequena">
+    <hr>
+    <h3>Imagem Dinâmica</h3>
+        <picture>
+            <source media="(max-width: 850px)" srcset="../imagens/p.png" type="image/png"> <!--a menor fica no topo. Quanto maior, mais pra baixo.-->
+            <source media="(max-width: 1350px)" srcset="../imagens/m.png" type="image/png">
+            <source media="(max-width: 1650px)" srcset="../imagens/g.png" type="image/png">
+            <img src="../Imagens/gg.png" alt="Imagem flexível"> <!--Imagem padrão-->
+        </picture>
+
+         
+    
+    
+</body>
+</html>
