@@ -35,6 +35,11 @@ img{
     margin: auto;
 }
 
+a.linkexterno:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
 a.linkexterno::after{
     content: '\00A0\1F517';
 }
@@ -54,6 +59,7 @@ header h1{
     font:normal 3em var(--fonte-destaque);
     color: white;
     padding: 20px 10px 10px;
+    transition-duration: 0.5s
 }
 
 header p{
@@ -113,6 +119,10 @@ main p{
     line-height: 1.5em;
 }
 
+main p::first-letter{
+    font-size: 1.5em;
+}
+
 main a{
     background-color: var(--cor3);
     color: white;
@@ -159,6 +169,10 @@ ul{
     list-style-position: inside;
 }
 
+abbr{
+    text-decoration: none;
+}
+
 footer{
     margin: 50px 0px 0px 0px;
     background-color: var(--cor5);
@@ -172,5 +186,8 @@ footer p{
 footer a{
     color: white;
     text-decoration: none;
+}
 
+footer a:hover{
+    color: var(--cor1);
 }
