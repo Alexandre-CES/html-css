@@ -3,4 +3,4 @@
 
  Top 10 alterações dos animes
 
- <a href="https://alexandre-ces.github.io/html-css/exercicios/modulo-2/6-projeto/android">executar site do android</a>
+ <a href="https://alexandre-ces.github.io/html-css/exercicios/modulo-1/ex001/index">primeiro site que criei</a>
