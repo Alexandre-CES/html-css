@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+:root{
+    --fonte-destaque:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+    --fonte-padrao: Arial, Verdana, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    background-color: black;
+}
+
+header h1{
+    font: normal 3em var(--fonte-destaque);
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+header p{
+    color: white;
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+main{
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 40px;
+}
+
+.estrofe{
+    margin: 50px 0px 50px 0px;
+    width: 300px;
+    font:normal 1.3em var(--fonte-padrao);
+    line-height: 40px;
+    padding: 20px;
+}
+
+#img1fora{
+    position: relative;
+    background: black url(imagens/background001.jpg) right center no-repeat fixed;
+    background-size:cover;
+    max-width: 1000px;
+    height: 500px;
+}
+
+#img1dentro{
+    position: absolute;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 20px 10px 20px 20px;
+
+    top: 20%;
+
+}
+
+#img1dentro p{
+    font: normal 1.3em var(--fonte-padrao);
+    color: white;
+    line-height: 40px;
+}
+
+#img2fora{
+    position: relative;
+    background: black url(imagens/background002.jpg) right center no-repeat fixed;
+    background-size:cover;
+    max-width: 1000px;
+    height: 500px;
+}
+
+#img2dentro{
+    position: absolute;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 20px 10px 20px 20px;
+
+    top: 20%;
+
+}
+
+#img2dentro p{
+    font: normal 1.3em var(--fonte-padrao);
+    color: white;
+    line-height: 40px;
+}
