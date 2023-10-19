@@ -10,22 +10,21 @@
         }
 
         table{
-            border-collapse:collapse;
-            border: 2px solid red;
-        }
-
-        .linhadestaque{
-            background-color: gray;
+            border-collapse: collapse;
+            width: 400px;
+            height: 400px;
         }
 
         td{
             border: 1px solid black;
             width: 50px;
             padding: 10px;
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: top; /*alinhamento vertical*/
         }
 
-        .dado{
-            background-color: yellow;
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -44,24 +43,21 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linhadestaque"> <!--Segunda linha-->
+        <tr> <!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr> <!--Terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td class="dado">C3</td>
-            <td>D3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr> <!--Quarta linha-->
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
         </tr>
-        <tr>
-            <td>A5</td>
         </tr>
     </table>
     
