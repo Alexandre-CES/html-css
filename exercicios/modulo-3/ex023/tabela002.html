@@ -13,6 +13,13 @@
             width: 500px;
         }
 
+        caption{
+            padding: 10px;
+            background-color: lightgray;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
         thead, tfoot{
             background-color: rgb(85, 84, 84);
             color: white;
@@ -42,14 +49,17 @@
     -->
     
     <table>
+        <caption>
+            População das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tfoot> <!-- Não importa a ordem que o head, body e foot são colocadas, sempre ficaram corretas por causa da semântica-->
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num"><strong>?</strong></td>
         </tfoot>
         <tbody>
