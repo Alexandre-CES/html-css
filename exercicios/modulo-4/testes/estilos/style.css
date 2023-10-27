@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    width: 100vw;
+    background: blue;
+}
+
+section#telefone{
+    position: absolute;
+
+    height: 627px;
+    width: 310px;
+
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+
+    background: green url(../imagens/frame-iphone.png) center top no-repeat;
+}
+
+div#homepage{
+    position: relative;
+    height: 469px;
+    width: 266px;
+
+    top: 81px;
+    left: 23px;
+
+    background: url(../imagens/tela-home.jpg) center no-repeat;
+    background-size: cover;
+}
+
+iframe{
+    height: 500px;
+}
