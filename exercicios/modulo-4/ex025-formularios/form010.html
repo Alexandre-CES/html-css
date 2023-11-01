@@ -8,18 +8,33 @@
 <body>
     <form action="cadastro.js" method="get" autocomplete="on">
 
-        <p>
+        <p> <!--Forma que fiz-->
             <label for="iano">Em que ano você nasceu?</label>
-            <input type="number" name="ano" id="iano" oninput="result.innerHTML = `Você tem ${Number(2023) - Number(iano.value)} anos`">
-            <p>
-                <output id="result">?</output>
-            </p>
+            <input type="number" name="ano1" id="iano1" oninput="result.innerHTML = `Você tem ${Number(2023) - Number(iano1.value)} ou ${Number(2023) - Number(iano1.value) - 1} anos`">
         </p>
-
+        <p>
+            <label for="result">Idade:</label>
+            <output id="result">Você tem ? anos</output>
+        </p>
+        <p> <!--forma que Guanabara ensinou (calendário atualiza automaticamente)-->
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" oninput="calcIdade()"> 
+        </p>
+        <p>
+            <label for="iidade">Idade:</label>
+            <output id="iidade">0</output>
+        </p>
         </p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = `Você tem ${Number(atual) - Number(iano.value) - 1} ou ${Number(atual) - Number(iano.value)} anos`
+        }
+    </script>
 </body>
 </html>
