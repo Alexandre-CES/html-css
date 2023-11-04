@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font: normal 1em arial, sans-serif;
+}
+
+:root{
+    --color1: rgb(107, 0, 128);
+    --color2: rgb(185, 252, 237);
+    --color3: rgb(104, 206, 172);
+    --color4: rgb(23, 173, 123);
+    --color5: rgb(0, 128, 85);
+}
+
+html, body{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--color1), var(--color5));
+}
+
+section{
+    position: relative;
+    max-height: 600px;
+    max-width: 50vw;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
+}
+
+article#imagem{
+    height: 40vh;
+    background: var(--color1) url(../imagens/pexels-vova-kras-2747248.jpg) center no-repeat;
+    background-size: cover;
+
+}
+
+article#arealogin{
+    padding: 20px;
+}
+
+article#arealogin  h1{
+    text-align: center;
+    font:bold 1.5em arial, sans-serif;
+}
+
+article#arealogin  p{
+    font: normal 0.8em arial, sans-serif;
+}
+
+article#arealogin  div{
+    padding-bottom: 3px;
+    margin: 6px 0px;
+    border:1.8px solid var(--color1);
+    border-radius: 5px;
+    background-color: var(--color1);
+}
+
+article#arealogin label span{
+    color: white;
+    margin-bottom:  -7px;
+}
+
+article#arealogin div input{
+    width: 85%;
+    height: 23px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: var(--color3);
+}
+
+article#arealogin  p.localdeenvio{
+    text-align: center;
+    margin: 3px 0px; 
+    padding: 5px;
+
+    border-radius: 3px;
+    border: 1px solid var(--color4);
+    background-color: var(--color4);
+}
+
+article#arealogin p#enviar a{
+    color: white;
+    text-decoration: none;
+}
+article#arealogin p#esqueceusenha {
+    background-color: white;
+}
+
+article#arealogin p#esqueceusenha a{
+    text-decoration: none;
+    color: var(--color5);
+}
+
