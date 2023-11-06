@@ -1,96 +1,97 @@
 @charset "UTF-8";
 
+:root{
+    --cor1: rgb(102, 0, 128);
+    --cor2: rgb(0, 182, 112);
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font: normal 1em arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-:root{
-    --color1: rgb(107, 0, 128);
-    --color2: rgb(185, 252, 237);
-    --color3: rgb(104, 206, 172);
-    --color4: rgb(23, 173, 123);
-    --color5: rgb(0, 128, 85);
-}
-
-html, body{
+body, html{
+    position: relative;
     height: 100vh;
-    background: linear-gradient(to bottom, var(--color1), var(--color5));
-    padding: 10px;
+    background-color: var(--cor1);
 }
 
-section{
-    max-height: 1000px;
-    max-width: 600px;
-    margin: auto;
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
 
-    border-radius: 32px;
-    background-color: white;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
+    width: 200px;
+
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-article#imagem{
-    height: 40vh;
-    background: var(--color1) url(../imagens/pexels-vova-kras-2747248.jpg) center no-repeat;
+section#imagem{
+    height: 200px;
+
+    background: url(../imagens/pexels-vova-kras-2747248.jpg) center no-repeat;
     background-size: cover;
-    border-radius: 30px 30px 0px 0px;
 }
 
-article#arealogin{
-    padding: 20px;
+section#login{
+    padding: 10px;
+
+    background: white;
 }
 
-article#arealogin  h1{
+section#login > h1{
+    text-align: center;   
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section#login > p{
     text-align: center;
-    font:bold 1.5em arial, sans-serif;
 }
 
-article#arealogin  p{
-    font: normal 0.8em arial, sans-serif;
+
+section#login div{
+    height: 28px;
+
+    margin: 5px 0px;
 }
 
-article#arealogin  div{
-    padding-bottom: 4px;
-    margin: 6px 0px;
-    border:1.8px solid var(--color1);
-    border-radius: 5px;
-    background-color: var(--color1);
+section#login div.login{
+
+    background-color: var(--cor1);
 }
 
-article#arealogin label span{
+section#login div input{
+    width: 150px;
+
+    background-color: rgb(162, 252, 182);
+}
+
+input#enviar{
+    width: 180px;
+    padding: 2px;
+
+    border: 1px solid rgb(4, 185, 13);
+
     color: white;
+    background-color: var(--cor2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+
+    cursor: pointer;
 }
 
-article#arealogin div input{
-    margin-left: 1px;
-    height: 30px;
-    border: 1px;
-    border-radius: 5px;
-    background-color:var(--color3);
-}
-
-article#arealogin  p.localdeenvio{
+div p{
     text-align: center;
-    margin: 3px 0px; 
-    padding: 5px;
 
-    border-radius: 3px;
-    border: 1px solid var(--color4);
-    background-color: var(--color4);
+    border:1px solid var(--cor2);
 }
 
-article#arealogin p#enviar a{
-    color: white;
+div p a{
+    color: var(--cor2);
     text-decoration: none;
-}
-article#arealogin p#esqueceusenha {
-    background-color: white;
-}
-
-article#arealogin p#esqueceusenha a{
-    text-decoration: none;
-    color: var(--color5);
 }
 
