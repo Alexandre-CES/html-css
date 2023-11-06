@@ -24,7 +24,7 @@ main{
     left: 50%;
     transform: translate(-50% ,-50%);
 
-    width: 200px;
+    width: 80%;
 
     overflow: hidden;
     border-radius: 20px;
@@ -61,30 +61,44 @@ section#login div{
 }
 
 section#login div.login{
+    border-radius: 5px;
 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
     background-color: var(--cor1);
 }
 
-section#login div input{
+section#login div.login input{
     width: 150px;
 
     background-color: rgb(162, 252, 182);
 }
 
-input#enviar{
-    width: 180px;
-    padding: 2px;
-
-    border: 1px solid rgb(4, 185, 13);
-
-    color: white;
-    background-color: var(--cor2);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
-
-    cursor: pointer;
+div.enviararea{
+    border-radius: 5px;
 }
 
-div p{
+div#divenviar{
+    border: 1px solid rgb(4, 185, 13);
+    border-radius: 5px;
+    background-color: var(--cor2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+input#enviar{
+    display: block;
+    margin: auto;
+    
+    padding: 2px;
+
+    color: white;
+    cursor: pointer;
+
+    border: 0px;
+    background-color: rgba(0, 128, 0, 0);
+}
+
+div#esqueceusenha{
+    padding: 2px;
     text-align: center;
 
     border:1px solid var(--cor2);
